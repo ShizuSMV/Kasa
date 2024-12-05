@@ -8,7 +8,7 @@ function MainSectionHome() {
 		<main className="main">
 			<div className="main__container">
 				{/* Bannière spécifique pour la page d'accueil */}
-				<Banner imgSrc="/images/background_home.png" text="Chez vous, partout et ailleurs" /> {/* Affiche la bannière avec une image et un texte */}
+				<Banner imgSrc="/images/background_home.webp" text="Chez vous, partout et ailleurs" /> {/* Affiche la bannière avec une image et un texte */}
 				<section className="main__container__offers">
 					<div className="main__container__offers__container">
 						{/* Génération des cartes dynamiquement */}

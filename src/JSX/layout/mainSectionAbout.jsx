@@ -7,7 +7,7 @@ function MainSectionAbout() {
 		<main className="main">
 			<div className="main__container">
 				{/* Bannière */}
-				<Banner imgSrc="/images/background_about.png" /> {/* Affiche la bannière avec l'image spécifique à la page "À propos" */}
+				<Banner imgSrc="/images/background_about.webp" /> {/* Affiche la bannière avec l'image spécifique à la page "À propos" */}
 				<section className="main__container__toggle-info-menu">
 					<ToggleInfoMenu
 						text="Fiabilité" // Titre du menu déroulant

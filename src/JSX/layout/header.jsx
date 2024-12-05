@@ -6,7 +6,7 @@ function Header() {
 		<header className="header">
 			<div className="header__container">
 				<div className="header__container__img-container">
-					<img className="header__container__img-container__img" src="/images/kasa_logo_red.png" alt="Logo Kasa" /> {/* Logo de Kasa */}
+					<img className="header__container__img-container__img" src="/images/kasa_logo_red.webp" alt="Logo Kasa" /> {/* Logo de Kasa */}
 				</div>
 				<nav>
 					<ul className="header__container__links-container">
