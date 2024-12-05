@@ -1,0 +1,20 @@
+.main__container__description__author__stars {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; // Utiliser 'flex-end' pour aligner à droite
+	align-items: center;
+	gap: 7px;
+
+	&-filled,
+	&-empty {
+		font-size: 15px;
+	}
+
+	&-filled {
+		color: #ff6060; // Couleur rouge pour les étoiles remplies
+	}
+
+	&-empty {
+		color: #e3e3e3; // Couleur grise pour les étoiles vides
+	}
+}

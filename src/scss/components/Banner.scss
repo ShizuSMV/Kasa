@@ -1,0 +1,40 @@
+@import "./Mixins.scss";
+
+.main__container__banner-container {
+	@include display; // Applique le mixin pour centrer les éléments
+	position: relative; // Positionnement relatif pour l'overlay
+	width: 100%; // La largeur de l'élément prend toute la largeur du conteneur
+	height: 165px; // Hauteur de la bannière
+	border-radius: 15px; // Arrondi des bords
+	box-shadow: 0px 4px 4px 0px #00000040; // Ombre portée pour un léger effet de profondeur
+	margin: 0 0 30px 0; // Marge en bas
+
+	&__img {
+		width: 100%; // L'image prend toute la largeur du conteneur
+		height: 100%; // L'image prend toute la hauteur du conteneur
+		object-fit: cover; // L'image est recadrée pour couvrir tout le conteneur
+		border-radius: 15px; // Arrondi des bords de l'image
+	}
+
+	&__overlay {
+		@include display; // Utilisation du mixin pour centrer les éléments de l'overlay
+		position: absolute; // Positionnement absolu pour superposer l'overlay sur l'image
+		top: 0;
+		right: 0;
+		width: 100%; // L'overlay prend toute la largeur
+		height: 100%; // L'overlay prend toute la hauteur
+		border-radius: 15px; // Arrondi des bords
+		background-color: rgba(0, 0, 0, 0.3); // Fond semi-transparent noir
+		z-index: 1; // L'overlay est au-dessus de l'image
+
+		&__p {
+			@include display; // Centrer le texte dans l'overlay
+			width: 100%; // Le texte prend toute la largeur du conteneur
+			font-size: 33px; // Taille de la police
+			font-weight: 700; // Poids de la police
+			line-height: 68px; // Hauteur de ligne pour espacer les lignes de texte
+			text-shadow: -1px -1px 0 #00000059, /* Ombre en haut à gauche */ 1px -1px 0 #00000059, /* Ombre en haut à droite */ -1px 1px 0 #00000059, /* Ombre en bas à gauche */ 1px 1px 0 #00000059; /* Ombre en bas à droite */
+			color: white; // Couleur du texte
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.main__container__description__presentation__tags {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; // Utiliser 'flex-start' pour aligner à gauche
+	align-items: center;
+	width: 100%;
+	gap: 10px;
+
+	&__each {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+		height: 20px;
+		font-size: 12px;
+		font-weight: 700;
+		color: white;
+		border-radius: 7px;
+		background-color: #ff6060;
+	}
+}

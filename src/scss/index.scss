@@ -1,0 +1,17 @@
+@import "../scss/layout/app.scss";
+@import "../scss/layout/Header.scss"; // Importation de header.scss
+@import "../scss/layout/mainSectionHome.scss"; // Importation de mainSection.scss
+@import "../scss/layout/mainSectionOffers.scss";
+@import "../scss/layout/mainSectionAbout.scss";
+@import "../scss/layout/NotFound.scss";
+@import "../scss/layout/Footer"; // Importation de footer.scss
+@import "../scss/components/Mixins.scss";
+
+* {
+	font-family: "Montserrat";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}

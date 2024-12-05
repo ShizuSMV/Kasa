@@ -1,0 +1,42 @@
+@import "./Mixins.scss";
+
+.main__container__carousel {
+	@include display; // Utilisation du mixin display pour flex
+	position: relative; // Positionnement relatif pour permettre le placement des éléments à l'intérieur
+	width: 100%; // Largeur de 100% du conteneur parent
+	height: 310px; // Hauteur fixe du carousel
+	border-radius: 15px; // Bords arrondis
+
+	&__img {
+		width: 100%; // L'image prend toute la largeur du conteneur
+		height: 100%; // L'image prend toute la hauteur du conteneur
+		object-fit: cover; // Recadre l'image pour couvrir tout le conteneur sans déformer
+		border-radius: 15px; // Arrondir les bords de l'image
+	}
+
+	&__button {
+		display: flex; // Utilisation de Flexbox pour aligner les boutons à l'intérieur
+		flex-direction: row; // Aligne les éléments en ligne
+		justify-content: space-between; // Espace égal entre les éléments (boutons)
+		align-items: center; // Aligne les éléments verticalement
+		position: absolute; // Position absolue pour placer le bouton par-dessus l'image
+		width: 97%; // Laisser un petit espace des bords de l'image
+
+		&__prev-next {
+			width: 40px; // Largeur du bouton
+			height: 75px; // Hauteur du bouton
+			font-size: 70px; // Taille de la flèche
+			color: white; // Couleur du texte (flèche)
+			text-shadow: -1px -1px 0 #00000059,
+				// Ombre en haut à gauche
+				1px -1px 0 #00000059,
+				// Ombre en haut à droite
+				-1px 1px 0 #00000059,
+				// Ombre en bas à gauche
+				1px 1px 0 #00000059; // Ombre en bas à droite
+			background: none; // Pas de fond pour le bouton
+			border: none; // Pas de bordure
+			cursor: pointer; // Curseur pointeur pour indiquer que c'est un bouton
+		}
+	}
+}

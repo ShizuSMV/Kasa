@@ -1,0 +1,45 @@
+@import "../components/Mixins.scss";
+
+.header {
+	@include display;
+	width: 100%;
+	margin: 0 0 20px 0;
+
+	&__container {
+		@include display;
+		flex-direction: row;
+		justify-content: space-between;
+		box-sizing: border-box;
+		width: 90%;
+
+		&__img-container {
+			@include display;
+			width: 155px;
+
+			&__img {
+				object-fit: cover;
+				width: 100%;
+			}
+		}
+
+		&__links-container {
+			@include display;
+			flex-direction: row;
+			list-style-type: none;
+			gap: 40px;
+
+			&__link {
+				text-decoration: none;
+				font-family: "Montserrat";
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 34px;
+				color: black;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

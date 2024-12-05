@@ -1,0 +1,36 @@
+@import "../components/Mixins.scss";
+
+.main {
+	@include display;
+	flex-direction: column;
+	width: 100%;
+
+	&__container {
+		@include display;
+		flex-direction: column;
+		width: 90%;
+
+		&__offers {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 35px 15px;
+			border-radius: 10px;
+			background-color: #f6f6f6;
+			margin: 0 0 30px 0;
+
+			&__container {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				width: 100%;
+				gap: 50px 20px;
+				margin: 0;
+			}
+		}
+	}
+}

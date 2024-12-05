@@ -1,0 +1,15 @@
+body {
+	height: 100%; // Assure que la hauteur de la page est de 100%
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	flex: 1; // S'assure que le contenu principal occupe tout l'espace disponible
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; // Prend la hauteur totale de la fenêtre
+}

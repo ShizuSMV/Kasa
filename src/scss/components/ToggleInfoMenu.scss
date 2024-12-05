@@ -1,0 +1,60 @@
+.main__container__toggle-info-menu__card {
+	width: 100%;
+	margin-bottom: 20px;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 97%;
+		height: 15px;
+		padding: 10px 15px;
+		background-color: #ff6060;
+		border-radius: 5px;
+
+		&__p {
+			font-size: 18px;
+			font-weight: bold;
+			color: white;
+		}
+
+		&__button {
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			&__icon {
+				font-size: 20px;
+				color: white;
+			}
+		}
+	}
+
+	&__description {
+		width: 97%;
+		border-radius: 5px;
+		background-color: #f5f5f5;
+		padding: 15px;
+
+		&__p {
+			margin: 0;
+			line-height: 17px;
+			font-size: 13px;
+			color: black;
+		}
+
+		animation: fadeIn 0.3s ease-in-out;
+	}
+}
+
+// Animation pour la description
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
