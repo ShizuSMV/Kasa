@@ -19,22 +19,31 @@
 	&__overlay {
 		@include display; // Utilisation du mixin pour centrer les éléments de l'overlay
 		position: absolute; // Positionnement absolu pour superposer l'overlay sur l'image
+		box-sizing: border-box;
 		top: 0;
 		right: 0;
 		width: 100%; // L'overlay prend toute la largeur
 		height: 100%; // L'overlay prend toute la hauteur
 		border-radius: 15px; // Arrondi des bords
-		background-color: rgba(0, 0, 0, 0.3); // Fond semi-transparent noir
+		background-color: rgba(0, 0, 0, 0.6); // Fond semi-transparent noir
 		z-index: 1; // L'overlay est au-dessus de l'image
+		padding: 10px;
 
 		&__p {
 			@include display; // Centrer le texte dans l'overlay
 			width: 100%; // Le texte prend toute la largeur du conteneur
-			font-size: 33px; // Taille de la police
+			font-size: 35px; // Taille de la police
 			font-weight: 700; // Poids de la police
-			line-height: 68px; // Hauteur de ligne pour espacer les lignes de texte
 			text-shadow: -1px -1px 0 #00000059, /* Ombre en haut à gauche */ 1px -1px 0 #00000059, /* Ombre en haut à droite */ -1px 1px 0 #00000059, /* Ombre en bas à gauche */ 1px 1px 0 #00000059; /* Ombre en bas à droite */
 			color: white; // Couleur du texte
+			padding: 10px;
 		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main__container__banner-container {
+		height: 120px; // Réduire la hauteur de la bannière pour s'adapter aux petits écrans
+		margin: 0 0 20px 0; // Réduire la marge en bas
 	}
 }

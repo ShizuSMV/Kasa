@@ -10,6 +10,9 @@ main {
 
 .app {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
+	box-sizing: border-box;
+	overflow: hidden;
 	min-height: 100vh; // Prend la hauteur totale de la fenêtre
 }

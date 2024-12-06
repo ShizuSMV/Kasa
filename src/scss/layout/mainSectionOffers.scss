@@ -15,7 +15,7 @@
 		&__description {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 			width: 100%;
 			margin: 15px 0;
@@ -58,6 +58,8 @@
 					justify-content: right;
 					box-sizing: border-box;
 					overflow: hidden;
+					white-space: wrap;
+					text-overflow: ellipsis;
 					width: 100%;
 					height: 100%;
 					gap: 10px;
@@ -91,7 +93,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			align-items: left;
+			align-items: start;
 			width: 100%;
 			gap: 70px;
 			margin: 0;
@@ -105,5 +107,34 @@
 				margin: 0;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main__container__description {
+		flex-direction: column;
+
+		&__presentation {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&__author {
+			flex-direction: row-reverse;
+			align-items: center;
+			width: 100%;
+
+			&__info {
+				align-items: center;
+				margin: 0;
+			}
+		}
+	}
+
+	.main__container__infos {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0;
 	}
 }

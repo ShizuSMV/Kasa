@@ -43,3 +43,10 @@
 		}
 	}
 }
+
+@media screen and (max-width: 425px) {
+	.main__container__offers__container__card {
+		width: 100%;
+		height: 270px;
+	}
+}
